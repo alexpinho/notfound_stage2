@@ -4,7 +4,7 @@ import Layout from './Components/Layout';
 function Home () {
   return (
     <Layout>
-<h1>ola</h1>
+        <h1>ola</h1>
     </Layout>
   );
 };
