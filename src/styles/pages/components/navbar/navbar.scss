@@ -1,11 +1,21 @@
 @import "../../../base.scss";
 
 .navbar {
-  background-color: blue;
+  //background-color: blue;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   position: sticky;
   width: 100%;
   z-index: 2;
+  padding: 3rem 3rem 1rem;
+
+  &-menu {
+    //background-color: red;
+    list-style: none;
+
+    &-elements {
+      padding: 0.25rem 0;
+    }
+  }
 }

@@ -28,7 +28,17 @@ h2 {
   font-family: "Cotham";
   font-size: 4.5rem;
   line-height: 5rem;
-  font-weight: 400;
   letter-spacing: 0.025rem;
+  color: $primary-color;
+}
+
+.navbar-elements {
+  font-family: "Cotham";
+  font-size: 1rem;
+  line-height: auto;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  display: block;
+  text-align: end;
   color: $primary-color;
 }

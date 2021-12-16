@@ -5,6 +5,7 @@ function Home () {
   return (
     <Layout>
         <h1>ola</h1>
+        
     </Layout>
   );
 };

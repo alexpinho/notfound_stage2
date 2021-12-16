@@ -7,7 +7,7 @@ function Navbar (){
             <img src="img/nf.svg" className="navbar-logo" alt="" />
             <ul className="navbar-menu">
                 <li className="navbar-menu-elements">
-                    <a href='/info' className="navbar-text">info</a>
+                    <a href='/info' className="navbar-elements">info</a>
                 </li>
             </ul>
         </div>
