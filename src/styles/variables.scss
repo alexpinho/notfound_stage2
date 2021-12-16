@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap");
+$poppins: "Poppins", sans-serif;
+
+@font-face {
+  font-family: "BarracudaBold";
+  src: local("BarracudaBold"),
+    url("./fonts/Barracuda-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "WFTSRise";
+  src: local("WFTSRise"),
+    url("./fonts/WaitingfortheSunrise-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Cotham";
+  src: local("Cotham"), url("./fonts/CothamSans.otf") format("truetype");
+  font-weight: normal;
+}
