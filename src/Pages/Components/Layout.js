@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../Header';
-import { appWrapper } from './layout.module.scss';
+import Navbar from './Navbar/Navbar';
 
 const Layout = ({ children }) => {
   return (
-    <div className={appWrapper}>
-      {/*<Header />*/}
+    <div className="Layout">
+      <Navbar/>
       {children}
     </div>
   );

@@ -1,19 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Landing from './screens/Landing';
-import About from './screens/About';
-import Work from './screens/Work';
-import Contact from './screens/Contact';
-import './styles/base.scss';
+import Home from './Pages/Home';
+import Info from './Pages/Info';
+import './styles/applications.scss';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/' component={Landing} exact />
-        <Route path='/about' component={About} exact />
-        <Route path='/work' component={Work} exact />
-        <Route path='/contact' component={Contact} exact />
+        <Route path='/' component={Home} exact />
+        <Route path='/info' component={Info} exact />
       </Switch>
     </Router>
   );
