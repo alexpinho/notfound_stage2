@@ -1,0 +1,36 @@
+.card-project {
+  display: flex;
+
+  &-item-image {
+    position: absolute;
+    background-color: red;
+    height: 33rem;
+    width: 10rem;
+    z-index: -1;
+  }
+
+  &-item-date {
+    margin-top: 1rem;
+    margin-left: 13.5rem;
+  }
+
+  &-item-title {
+    margin-top: 4.5rem;
+    margin-left: 5.5rem;
+  }
+
+  &-item-area {
+    margin-top: 1rem;
+    margin-left: 11rem;
+  }
+
+  &-item-team {
+    margin-top: 7rem;
+    margin-left: 11rem;
+    max-width: 10rem;
+
+    &-fix {
+      color: #b4b4b4;
+    }
+  }
+}

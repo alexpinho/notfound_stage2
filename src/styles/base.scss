@@ -15,16 +15,19 @@ body {
 $primary-color: #000000;
 $secondary-color: #ffffff;
 
-h1 {
+.text-title {
   font-family: "BarracudaBold";
-  font-size: 4.5rem;
-  line-height: auto;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
   color: $primary-color;
+
+  //font-size: 4.5rem;
+  //line-height: 5rem;
 }
 
-h2 {
+.text-big {
   font-family: "Cotham";
   font-size: 2.5rem;
   line-height: 3rem;
@@ -37,7 +40,25 @@ h2 {
   // letter-spacing: 0.025rem;
 }
 
-.navbar-elements {
+.text-normal {
+  font-family: "Cotham";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+  color: $primary-color;
+}
+
+.text-detail {
+  font-family: "BarracudaBold";
+  font-size: 1rem;
+  line-height: auto;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  color: $primary-color;
+}
+
+.text-navbar-elements {
   font-family: "Cotham";
   font-size: 1rem;
   line-height: auto;
