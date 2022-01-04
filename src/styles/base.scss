@@ -23,8 +23,10 @@ $secondary-color: #ffffff;
   letter-spacing: 0.05rem;
   color: $primary-color;
 
-  //font-size: 4.5rem;
-  //line-height: 5rem;
+  @include xl {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
 }
 
 .text-big {

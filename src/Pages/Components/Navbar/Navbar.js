@@ -3,7 +3,9 @@ import React from "react";
 function Navbar() {
   return (
     <div className="navbar">
-      <img src="img/nf.svg" className="navbar-logo" alt="" />
+      <a href="/" className="navbar-logo">
+        <img src="img/nf.svg" alt="logo" className="navbar-logo" />
+      </a>
       <ul className="navbar-menu">
         <li className="navbar-menu-elements">
           <a href="/info" className="text-navbar-elements">

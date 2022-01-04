@@ -9,18 +9,20 @@ function Home() {
         <div className="container">
           <div className=" section section-one">
             <CardProject
+              imageUrl="img/50.jpg"
               date="2020"
-              title="archive projects"
-              area="ACADEMIC"
+              title="queima das fitas 2021"
+              area="PROFESSIONAL"
               team="Ana Catarina Ricardo Sacadura"
             />
           </div>
           <div className=" section section-two">
             <CardProject
-              date="2020"
-              title="queima das fitas 2021"
+              imageUrl="img/alta_baixa.jpg"
+              date="2021"
+              title="alta & baixa"
               area="ACADEMIC"
-              team="Ana Catarina Ricardo Sacadura"
+              team="Alexandre Lucas Carlota Silva"
             />
           </div>
           <div className=" section section-three">

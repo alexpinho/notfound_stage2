@@ -1,6 +1,8 @@
 .home {
   padding: 5rem 1rem;
   position: fixed;
+  margin: auto;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -11,6 +13,8 @@
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  margin: auto;
+  width: 80%;
 }
 
 .section {
