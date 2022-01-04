@@ -1,3 +1,32 @@
 .home {
   padding: 5rem 1rem;
+  position: fixed;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+
+  // &-one {
+  //   background-color: yellow;
+  // }
+  // &-two {
+  //   background-color: green;
+  // }
+  // &-three {
+  //   background-color: purple;
+  // }
+  // &-four {
+  //   background-color: brown;
+  // }
 }

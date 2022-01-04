@@ -1,36 +1,41 @@
 .card-project {
   display: flex;
+  //height: 33rem;
 
-  &-item-image {
-    position: absolute;
-    background-color: red;
-    height: 33rem;
-    width: 10rem;
-    z-index: -1;
-  }
+  &-item {
+    position: relative;
 
-  &-item-date {
-    margin-top: 1rem;
-    margin-left: 13.5rem;
-  }
+    &-image {
+      position: absolute;
+      background-color: red;
+      height: 33rem;
+      width: 10rem;
+      z-index: -1;
+    }
 
-  &-item-title {
-    margin-top: 4.5rem;
-    margin-left: 5.5rem;
-  }
+    &-date {
+      margin-top: 1rem;
+      margin-left: 13.5rem;
+    }
 
-  &-item-area {
-    margin-top: 1rem;
-    margin-left: 11rem;
-  }
+    &-title {
+      margin-top: 4.5rem;
+      margin-left: 5.5rem;
+    }
 
-  &-item-team {
-    margin-top: 7rem;
-    margin-left: 11rem;
-    max-width: 10rem;
+    &-area {
+      margin-top: 1rem;
+      margin-left: 11rem;
+    }
 
-    &-fix {
-      color: #b4b4b4;
+    &-team {
+      margin-top: 7rem;
+      margin-left: 11rem;
+      max-width: 10rem;
+
+      &-fix {
+        color: #b4b4b4;
+      }
     }
   }
 }
