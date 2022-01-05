@@ -33,8 +33,8 @@ function Home() {
               date="2020"
               title="porto.bc"
               area="PROFESSIONAL"
-              width="width/"
-              team="jeKnowledge"
+              width=""
+              team=""
             />
           </div>
           <div className=" section section-four">

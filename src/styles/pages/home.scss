@@ -3,6 +3,14 @@
   position: fixed;
   margin: auto;
   width: 100%;
+
+  @include md {
+    padding: 5rem 5rem;
+  }
+
+  @include xl {
+    padding: 5rem 20rem;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -14,7 +22,6 @@
   overflow-y: scroll;
   height: 100vh;
   margin: auto;
-  width: 80%;
 }
 
 .section {
