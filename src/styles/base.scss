@@ -37,9 +37,11 @@ $secondary-color: #ffffff;
   letter-spacing: 0.015rem;
   color: $primary-color;
 
-  // font-size: 4.5rem;
-  // line-height: 5rem;
-  // letter-spacing: 0.025rem;
+  @include sm {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    letter-spacing: 0.025rem;
+  }
 }
 
 .text-normal {

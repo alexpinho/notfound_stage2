@@ -1,11 +1,39 @@
 .info {
   &-text {
-    margin-top: 4.8rem;
-    margin-left: 1rem;
-    max-width: 20rem;
+    margin: 4.8rem 1rem 0;
 
+    @include sm {
+      margin: 5rem 3rem 0;
+    }
+
+    @include xl {
+      margin: 6rem 6rem 0;
+    }
+
+    @include xl {
+      margin: 8rem 12.5rem 0;
+    }
     // margin-top: 8rem;
     // margin-left: 12.5rem;
     // max-width: 53rem;
+  }
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }

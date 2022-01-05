@@ -4,10 +4,10 @@ $screen-md: 660px;
 
 $screen-lg: 800px;
 
-$screen-xl: 1080px;
+$screen-xl: 1200px;
 
 @mixin sm {
-  @media (max-width: #{$screen-sm}) {
+  @media (min-width: #{$screen-sm}) {
     @content;
   }
 }
