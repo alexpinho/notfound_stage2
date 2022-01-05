@@ -1,11 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Navbar from './Navbar/Navbar';
+import React from "react";
+import PropTypes from "prop-types";
+import Navbar from "./Navbar/Navbar";
+import CustomCursor from "./CustomCursor/CustomCursor";
 
 const Layout = ({ children }) => {
   return (
     <div className="Layout">
-      <Navbar/>
+      <CustomCursor />
+      <Navbar />
       {children}
     </div>
   );
