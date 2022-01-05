@@ -3,13 +3,14 @@
 
   @include xl {
     z-index: 1000;
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-    background-color: $secondary-color;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    // background-color: $secondary-color;
     pointer-events: none;
     overflow: hidden;
     position: fixed;
     mix-blend-mode: difference;
+    border: 2px solid white;
   }
 }
