@@ -13,6 +13,60 @@ const Info = () => {
           reflect my skills and make you get to know me a little better.
           <br />I hope you like it, <span className="blink_me">l</span>
         </div>
+        <div className="social">
+          <ul className="social-area">
+            <li className="social-area-elements">
+              <a
+                href="https://www.instagram.com/notf_found/"
+                className="social-area-elements-text text-social"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                instagram
+              </a>
+            </li>
+            <li className="social-area-elements">
+              <a
+                href="https://github.com/alexpinho"
+                className="social-area-elements-text text-social"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                github
+              </a>
+            </li>
+            <li className="social-area-elements">
+              <a
+                href="https://www.behance.net/alexandrepinho"
+                className="social-area-elements-text text-social"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                behance
+              </a>
+            </li>
+            <li className="social-area-elements">
+              <a
+                href="https://www.linkedin.com/in/alexandre-pinho-2159711b1/"
+                className="social-area-elements-text text-social"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                linkedin
+              </a>
+            </li>
+            <li className="social-area-elements">
+              <a
+                href="https://dribbble.com/not_found"
+                className="social-area-elements-text text-social"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                dribbble
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </Layout>
   );

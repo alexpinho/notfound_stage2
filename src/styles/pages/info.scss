@@ -1,21 +1,43 @@
 .info {
-  &-text {
-    margin: 4.8rem 1rem 0;
+  margin: 4.8rem 1rem 0;
 
-    @include sm {
-      margin: 5rem 3rem 0;
-    }
+  @include sm {
+    margin: 5rem 3rem 0;
+  }
+
+  @include lg {
+    margin: 6rem 6rem 0;
+  }
+
+  @include xl {
+    margin: 8rem 12.5rem 0;
+  }
+
+  .social {
+    margin: 4rem 0 5rem;
 
     @include xl {
-      margin: 6rem 6rem 0;
+      margin: 8rem 0 10rem;
     }
 
-    @include xl {
-      margin: 8rem 12.5rem 0;
+    &-area {
+      list-style: none;
+
+      @include lg {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      &-elements {
+        cursor: pointer;
+        padding: 1rem 0 1rem 0;
+
+        &-text {
+          text-decoration: none;
+        }
+      }
     }
-    // margin-top: 8rem;
-    // margin-left: 12.5rem;
-    // max-width: 53rem;
   }
 }
 

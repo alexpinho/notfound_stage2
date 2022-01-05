@@ -8,7 +8,12 @@
   position: sticky;
   width: 100%;
   z-index: 2;
+  top: 0;
   padding: 3rem 1rem 0;
+
+  @include xl {
+    padding: 3rem 3rem 0;
+  }
 
   &-menu {
     //background-color: red;
