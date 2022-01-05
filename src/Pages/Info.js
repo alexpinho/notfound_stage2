@@ -4,6 +4,11 @@ import Layout from "./Components/Layout";
 const Info = () => {
   return (
     <Layout>
+      <div className="assistant">
+        <a href="/" className="text-social assistant-text">
+          go back
+        </a>
+      </div>
       <div className="info">
         <div className="info-text text-big">
           Hi, I'm Alexandre! I appreciate that you want to know a little more

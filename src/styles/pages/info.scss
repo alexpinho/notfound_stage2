@@ -1,3 +1,25 @@
+.assistant {
+  position: fixed;
+  margin: 2rem 1rem 0;
+  mix-blend-mode: multiply;
+
+  // @include sm {
+  //   margin: 0 3rem 0;
+  // }
+
+  // @include lg {
+  //   margin: 0 6rem 0;
+  // }
+
+  @include xl {
+    margin: 3rem 3rem 0;
+  }
+
+  &-text {
+    color: #b4b4b4;
+  }
+}
+
 .info {
   margin: 4.8rem 1rem 0;
 
