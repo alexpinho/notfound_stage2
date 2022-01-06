@@ -1,9 +1,17 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion/dist/framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
-const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+const transition = { duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] };
+
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 1,
+    },
+  },
+};
 
 const CardProject = ({ imageUrl, date, title, area, width, team }) => {
   const { ref, inView } = useInView();
@@ -20,15 +28,15 @@ const CardProject = ({ imageUrl, date, title, area, width, team }) => {
     if (!inView) {
       animation.start({
         y: 50,
-        opacity: 1,
+        opacity: 0,
       });
     }
     console.log("use effect hook, inView = ", inView);
   });
 
   return (
-    <div className="card-project">
-      <div className="card-project-item">
+    <motion.div className="card-project">
+      <motion.div className="card-project-item" variants={container}>
         <motion.div
           ref={ref}
           className="card-project-item-image"
@@ -36,7 +44,13 @@ const CardProject = ({ imageUrl, date, title, area, width, team }) => {
         >
           <img src={imageUrl} className="card-project-item-image-img" alt="" />
         </motion.div>
-        <div className="card-project-item-date text-detail">{date}</div>
+        <motion.div
+          ref={ref}
+          className="card-project-item-date text-detail"
+          animate={animation}
+        >
+          {date}
+        </motion.div>
         <motion.div
           ref={ref}
           className="card-project-item-title text-title"
@@ -44,14 +58,24 @@ const CardProject = ({ imageUrl, date, title, area, width, team }) => {
         >
           {title}
         </motion.div>
-        <div className="card-project-item-area text-detail">{area}</div>
-        <div className="card-project-item-team text-normal">
+        <motion.div
+          ref={ref}
+          className="card-project-item-area text-detail"
+          animate={animation}
+        >
+          {area}
+        </motion.div>
+        <motion.div
+          ref={ref}
+          className="card-project-item-team text-normal"
+          animate={animation}
+        >
           <span className="card-project-item-team-fix">{width}</span>
           <br />
           {team}
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

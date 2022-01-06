@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion/dist/framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import Layout from "./Components/Layout";

@@ -1,11 +1,40 @@
 import React from "react";
 import Layout from "./Components/Layout";
 import CardProject from "./Components/CardProject";
+import { motion } from "framer-motion";
+
+const banner = {
+  animate: {
+    transition: {
+      delayChildren: 10,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 0.35,
+    },
+  },
+};
 
 function Home() {
   return (
     <Layout>
-      <div className="home">
+      <motion.div
+        className="home"
+        variants={banner}
+        initial={{ opacity: 0, y: 0 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 0.4, ...transition },
+        }}
+      >
         <div className="container">
           <div className=" section section-one">
             <CardProject
@@ -68,7 +97,7 @@ function Home() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   );
 }

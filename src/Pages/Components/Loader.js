@@ -31,18 +31,6 @@ const item = {
   },
 };
 
-const itemMain = {
-  hidden: { opacity: 0, y: 200 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 1.6,
-    },
-  },
-};
-
 const Loader = ({ setLoading }) => {
   return (
     <motion.div className="loader">
@@ -55,12 +43,12 @@ const Loader = ({ setLoading }) => {
         className="loader-inner"
       >
         <ImageBlock variants={item} id="image-1" />
-        <motion.div variants={itemMain} className="transition-image">
+        {/* <motion.div variants={itemMain} className="transition-image">
           <motion.img
             layoutId="main-image-1"
-            src={process.env.PUBLIC_URL + `/images/image-2.jpg`}
+            src={process.env.PUBLIC_URL + `/img/image-2.webp`}
           />
-        </motion.div>
+        </motion.div> */}
         <ImageBlock variants={item} id="image-3" />
         <ImageBlock variants={item} id="image-4" />
         <ImageBlock variants={item} id="image-5" />
@@ -80,8 +68,8 @@ export const ImageBlock = ({ posX, posY, variants, id }) => {
       }}
     >
       <Image
-        src={process.env.PUBLIC_URL + `/images/${id}.webp`}
-        fallback={process.env.PUBLIC_URL + `/images/${id}.jpg`}
+        src={process.env.PUBLIC_URL + `/img/${id}.webp`}
+        fallback={process.env.PUBLIC_URL + `/img/${id}.webp`}
         alt={id}
       />
     </motion.div>

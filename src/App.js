@@ -4,11 +4,7 @@ import Home from "./Pages/Home";
 import Info from "./Pages/Info";
 import "./styles/applications.scss";
 import Loader from "./Pages/Components/Loader";
-import {
-  motion,
-  AnimatePresence,
-  AnimateSharedLayout,
-} from "framer-motion/dist/framer-motion";
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -35,7 +31,7 @@ function App() {
                 <Route path="/info" component={Info} exact />
               </Switch>
             </Router>
-            {!loading && (
+            {/* {!loading && (
               <div className="transition-image final">
                 <motion.img
                   transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
@@ -43,7 +39,7 @@ function App() {
                   layoutId="main-image-1"
                 />
               </div>
-            )}
+            )} */}
           </>
         )}
       </AnimatePresence>
