@@ -1,15 +1,14 @@
 .home {
-  padding: 5rem 1rem;
+  padding-top: 5rem;
   position: fixed;
   margin: auto;
   width: 100%;
-
   @include md {
-    padding: 5rem 5rem;
+    padding-top: 5rem;
   }
 
   @include xl {
-    padding: 5rem 20rem;
+    padding-top: 5rem;
   }
 }
 
@@ -18,10 +17,18 @@
 }
 
 .container {
+  padding: 0 1rem;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
   margin: auto;
+  @include md {
+    padding: 0 5rem;
+  }
+
+  @include xl {
+    padding: 0 20rem;
+  }
 }
 
 .section {
