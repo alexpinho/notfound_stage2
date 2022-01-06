@@ -9,7 +9,7 @@ function Home() {
         <div className="container">
           <div className=" section section-one">
             <CardProject
-              imageUrl="img/queima.jpeg"
+              imageUrl="img/queima.webp"
               date="2020"
               title="queima das fitas 2021"
               area="PROFESSIONAL"
@@ -19,7 +19,7 @@ function Home() {
           </div>
           <div className=" section section-two">
             <CardProject
-              imageUrl="img/alta_baixa.jpg"
+              imageUrl="img/alta_baixa.webp"
               date="2021"
               title="alta & baixa"
               area="ACADEMIC"
@@ -29,7 +29,7 @@ function Home() {
           </div>
           <div className=" section section-three">
             <CardProject
-              imageUrl="img/porto_bc.jpg"
+              imageUrl="img/porto_bc.webp"
               date="2020"
               title="porto.bc"
               area="PROFESSIONAL"
@@ -39,7 +39,7 @@ function Home() {
           </div>
           <div className=" section section-four">
             <CardProject
-              imageUrl="img/skillX.jpg"
+              imageUrl="img/skillX.webp"
               date="2021"
               title="skillX"
               area="SUMMER INTERN"
@@ -49,7 +49,7 @@ function Home() {
           </div>
           <div className=" section section-five">
             <CardProject
-              imageUrl="img/culture.jpg"
+              imageUrl="img/culture.webp"
               date="2021"
               title="cultureInn"
               area="ACADEMIC"
@@ -59,7 +59,7 @@ function Home() {
           </div>
           <div className=" section section-six">
             <CardProject
-              imageUrl="img/mm.jpg"
+              imageUrl="img/mm.webp"
               date="2021"
               title="volumetric world"
               area="ACADEMIC"
