@@ -1,24 +1,65 @@
 import React from "react";
+import { motion, useAnimation } from "framer-motion/dist/framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import Layout from "./Components/Layout";
 
+const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+
 const Info = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.1, ...transition },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        y: 50,
+        opacity: 1,
+      });
+    }
+    console.log("use effect hook, inView = ", inView);
+  });
+
   return (
     <Layout>
-      <div className="assistant">
+      <motion.div
+        className="assistant"
+        initial={{ opacity: 0, x: 40 }}
+        animate={{
+          opacity: 1,
+          x: 0,
+          transition: { delay: 1, ...transition },
+        }}
+      >
         <a href="/" className="text-social assistant-text">
           go back
         </a>
-      </div>
+      </motion.div>
       <div className="info">
-        <div className="info-text text-big">
+        <motion.div
+          className="info-text text-big"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.4, ...transition },
+          }}
+        >
           Hi, I'm Alexandre! I appreciate that you want to know a little more
           about my work.
           <br />
           The portfolio presents my 4 best projects and also experiences, which
           reflect my skills and make you get to know me a little better.
           <br />I hope you like it, <span className="blink_me">l</span>
-        </div>
-        <div className="social">
+        </motion.div>
+        <motion.div ref={ref} className="social" animate={animation}>
           <ul className="social-area">
             <li className="social-area-elements">
               <a
@@ -71,7 +112,7 @@ const Info = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </Layout>
   );
