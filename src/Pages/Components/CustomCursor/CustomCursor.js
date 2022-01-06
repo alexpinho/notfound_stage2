@@ -1,9 +1,10 @@
 import React from "react";
+import { useEffect, useRef } from "react";
 
 const CustomCursor = () => {
-  const cursorRef = React.useRef(null);
+  const cursorRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
       const mouseX = clientX - cursorRef.current.clientWidth / 2;

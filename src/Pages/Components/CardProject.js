@@ -3,12 +3,12 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-const transition = { duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] };
+const transition = { duration: 0.8, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const container = {
   show: {
     transition: {
-      staggerChildren: 1,
+      staggerChildren: 0.2,
     },
   },
 };
