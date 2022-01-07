@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
 import Info from "./Pages/Info";
 import "./styles/applications.scss";
@@ -25,12 +25,12 @@ function App() {
           </motion.div>
         ) : (
           <>
-            <Router>
+            <BrowserRouter>
               <Switch>
                 <Route path="/" component={Home} exact />
                 <Route path="/info" component={Info} exact />
               </Switch>
-            </Router>
+            </BrowserRouter>
             {/* {!loading && (
               <div className="transition-image final">
                 <motion.img
