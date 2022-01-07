@@ -20,6 +20,7 @@ const container = {
 const CardProject = ({ imageUrl, date, title, area, width, team }) => {
   const { ref, inView } = useInView();
   const animation = useAnimation();
+
   const WaveShaderMaterial = shaderMaterial(
     // Uniform
     {
@@ -67,7 +68,7 @@ const CardProject = ({ imageUrl, date, title, area, width, team }) => {
     const ref = useRef();
     useFrame(({ clock }) => (ref.current.uTime = clock.getElapsedTime()));
 
-    const [image] = useLoader(THREE.TextureLoader, ["img/image-1.webp"]);
+    const [image] = useLoader(THREE.TextureLoader, ["img/" + imageUrl]);
 
     return (
       <mesh>
@@ -106,40 +107,36 @@ const CardProject = ({ imageUrl, date, title, area, width, team }) => {
 
   return (
     <motion.div className="card-project">
-      <motion.div className="card-project-item" variants={container}>
-        <motion.div
-          ref={ref}
-          className="card-project-item-image-img"
-          animate={animation}
-        >
+      <motion.div className="card-project-item">
+        <motion.div className="card-project-item-image-img">
           <Scene />
           {/* <img src={imageUrl} className="card-project-item-image-img" alt="" /> */}
         </motion.div>
         <motion.div
-          ref={ref}
+          //ref={ref}
           className="card-project-item-date text-detail"
-          animate={animation}
+          //animate={animation}
         >
           {date}
         </motion.div>
         <motion.div
-          ref={ref}
+          //ref={ref}
           className="card-project-item-title text-title"
-          animate={animation}
+          // animate={animation}
         >
           {title}
         </motion.div>
         <motion.div
-          ref={ref}
+          //ref={ref}
           className="card-project-item-area text-detail"
-          animate={animation}
+          //animate={animation}
         >
           {area}
         </motion.div>
         <motion.div
-          ref={ref}
+          //ref={ref}
           className="card-project-item-team text-normal"
-          animate={animation}
+          //animate={animation}
         >
           <span className="card-project-item-team-fix">{width}</span>
           <br />

@@ -38,7 +38,7 @@ function Home() {
         <div className="container">
           <div className=" section section-one">
             <CardProject
-              imageUrl="1"
+              imageUrl="queima.webp"
               date="2020"
               title="queima das fitas 2021"
               area="PROFESSIONAL"
@@ -48,7 +48,7 @@ function Home() {
           </div>
           <div className=" section section-two">
             <CardProject
-              imageUrl="2"
+              imageUrl="alta_baixa.webp"
               date="2021"
               title="alta & baixa"
               area="ACADEMIC"
@@ -58,7 +58,7 @@ function Home() {
           </div>
           <div className=" section section-three">
             <CardProject
-              imageUrl="3"
+              imageUrl="porto_bc.webp"
               date="2020"
               title="porto.bc"
               area="PROFESSIONAL"
@@ -68,7 +68,7 @@ function Home() {
           </div>
           <div className=" section section-four">
             <CardProject
-              imageUrl="4"
+              imageUrl="skillX.webp"
               date="2021"
               title="skillX"
               area="SUMMER INTERN"
@@ -78,7 +78,7 @@ function Home() {
           </div>
           <div className=" section section-five">
             <CardProject
-              imageUrl="5"
+              imageUrl="culture.webp"
               date="2021"
               title="cultureInn"
               area="ACADEMIC"
@@ -88,7 +88,7 @@ function Home() {
           </div>
           <div className=" section section-six">
             <CardProject
-              imageUrl="6"
+              imageUrl="mm.webp"
               date="2021"
               title="volumetric world"
               area="ACADEMIC"
