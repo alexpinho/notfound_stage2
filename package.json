@@ -4,7 +4,7 @@
   "homepage": "https://notfound.pt/",
   "private": true,
   "engines": {
-    "node": "16.2.0.x"
+    "node": "16.2.0"
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.19",
