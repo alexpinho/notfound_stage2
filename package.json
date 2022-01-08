@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "homepage": "https://notfound.pt/",
   "private": true,
+  "engines": {
+    "node": "16.2.0.x"
+  },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.19",
     "@react-three/drei": "^8.3.1",
